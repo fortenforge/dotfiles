@@ -38,4 +38,4 @@ export NVM_DIR="/Users/rsridhar/.nvm"
 search() { find . -type f -print0 | xargs -0 grep "$1"; }
 alias finder="open ."
 
-export PS1="\e[0;32m[\W]>\e[m "
+export PS1="\[\e[0;32m\][\W]>\[\e[m\] "
