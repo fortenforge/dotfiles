@@ -1,7 +1,19 @@
+# OS X Bash Profile
+# Last Updated: Jan 2017
+# Author: fortenforge
+
+# colors and bash prompt customization
 export CLICOLOR=1
 export LSCOLORS=ExBxhxDxCxhxhxhxhxGxGx
+export PS1="\[\e[0;32m\][\W]>\[\e[m\] "
 
+# useful aliases
 search() { find . ${2:+-name "$2"} -type f -print0 | xargs -0 grep "$1"; }
 alias finder="open ."
+trash() { mv "$1" ~/.Trash/; }
 
-export PS1="\[\e[0;32m\][\W]>\[\e[m\] "
+# necessary for 6.035 project
+export SCALA_HOME="/usr/local"
+
+# add all known identities to ssh-agent
+ssh-add -A 2>/dev/null;
