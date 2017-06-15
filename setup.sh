@@ -2,6 +2,7 @@
 
 # Symlink dotfiles to ~/
 # Backs up existing dotfiles to ~/.dotfiles_old/
+# Much of this is taken from https://github.com/nicksp/dotfiles
 
 
 get_os() {
