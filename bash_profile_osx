@@ -1,5 +1,5 @@
 # OS X Bash Profile
-# Last Updated: May 2017
+# Last Updated: Jun 2017
 # Author: fortenforge
 
 # colors and bash prompt customization
@@ -12,6 +12,8 @@ alias search='set -f;search';search() { find . ${2:+-name "$2"} -type f -print0 
 alias finder="open ."
 trash() { mv "$1" ~/.Trash/; }
 alias objdump="objdump -x86-asm-syntax intel"
+decap() { tail -n +$((1+$1)) $2; }
+sum() { paste -s -d+ - | bc; }
 
 # necessary for 6.035 project
 export SCALA_HOME="/usr/local"
