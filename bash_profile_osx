@@ -20,3 +20,7 @@ export SCALA_HOME="/usr/local"
 
 # add all known identities to ssh-agent
 ssh-add -A 2>/dev/null;
+
+alias kinit="kinit rsridhar@ATHENA.MIT.EDU"
+
+source ~/.profile
