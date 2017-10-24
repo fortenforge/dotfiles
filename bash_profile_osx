@@ -1,5 +1,5 @@
 # OS X Bash Profile
-# Last Updated: Jun 2017
+# Last Updated: Oct 2017
 # Author: fortenforge
 
 # colors and bash prompt customization
@@ -21,6 +21,8 @@ export SCALA_HOME="/usr/local"
 # add all known identities to ssh-agent
 ssh-add -A 2>/dev/null;
 
+# if local username != rsridhar
 alias kinit="kinit rsridhar@ATHENA.MIT.EDU"
 
+# for RVM
 source ~/.profile
