@@ -1,5 +1,5 @@
 # Linux Bash Profile
-# Last Updated: Jun 2017
+# Last Updated: Nov 2017
 # Author: fortenforge
 
 # colors and bash prompt customization
@@ -9,5 +9,8 @@ export PS1="\[\e[0;32m\][\W]>\[\e[m\] "
 # useful aliases
 alias search='set -f;search';search() { find . ${2:+-name "$2"} -type f -print0 | xargs -0 grep --color=auto "$1"; }
 alias objdump='objdump -M intel'
+alias aslrq='cat /proc/sys/kernel/randomize_va_space'
+alias aslr-on='echo 2 | sudo tee /proc/sys/kernel/randomize_va_space'
+alias aslr-off='echo 0 | sudo tee /proc/sys/kernel/randomize_va_space'
 decap() { tail -n +$((1+$1)) $2; }
 sum() { paste -s -d+ - | bc; }
