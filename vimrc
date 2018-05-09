@@ -58,7 +58,9 @@ set nowb
 " ================ Indentation ======================
 
 set autoindent
-set smartindent
+set cindent
+set cinkeys-=0#
+set indentkeys-=0#
 set smarttab
 set shiftwidth=2
 set softtabstop=2
