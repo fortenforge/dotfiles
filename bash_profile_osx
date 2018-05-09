@@ -1,5 +1,5 @@
 # OS X Bash Profile
-# Last Updated: Oct 2017
+# Last Updated: May 2018
 # Author: fortenforge
 
 # colors and bash prompt customization
@@ -26,3 +26,7 @@ alias kinit="kinit rsridhar@ATHENA.MIT.EDU"
 
 # for RVM
 source ~/.profile
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# delete last word of path in iTerm
+bind '\C-w:unix-filename-rubout'
