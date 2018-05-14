@@ -13,4 +13,4 @@
 [alias]
   lol = log --graph --oneline --decorate -- color --all
 [push]
-  default = matching
+	default = current
