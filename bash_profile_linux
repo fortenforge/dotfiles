@@ -14,3 +14,5 @@ alias aslr-on='echo 2 | sudo tee /proc/sys/kernel/randomize_va_space'
 alias aslr-off='echo 0 | sudo tee /proc/sys/kernel/randomize_va_space'
 decap() { tail -n +$((1+$1)) $2; }
 sum() { paste -s -d+ - | bc; }
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
