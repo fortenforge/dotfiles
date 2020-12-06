@@ -1,6 +1,6 @@
 [user]
-  name = Rahul Sridhar
-  email = sridhar.rahul@gmail.com
+	name = Rahul Sridhar
+	email = sridhar.rahul@gmail.com
 [core]
   editor = vim
 	excludesfile = /Users/fortenforge/.gitignore_global
@@ -14,3 +14,5 @@
   lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [push]
 	default = current
+[pull]
+	rebase = true
