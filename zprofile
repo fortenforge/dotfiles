@@ -5,7 +5,7 @@
 # colors and bash prompt customization
 export CLICOLOR=1
 export LSCOLORS=ExBxhxDxCxhxhxhxhxGxGx
-export PS1="\[\e[0;32m\][\W]>\[\e[m\] "
+export PROMPT='%F{green}[%1~]> %f'
 
 # useful aliases
 alias search='set -f;search';search() { find . ${2:+-name "$2"} -type f -print0 | xargs -0 grep --color=auto "$1"; }
@@ -28,6 +28,3 @@ alias kinit="kinit rsridhar@ATHENA.MIT.EDU"
 # for RVM
 source ~/.profile
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-# delete last word of path in iTerm
-bind '\C-w:unix-filename-rubout'
