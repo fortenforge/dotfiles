@@ -32,6 +32,7 @@ declare -a FILES_TO_SYMLINK=(
   'nethackrc'
   'gdbinit'
   'bash_profile'
+  'zprofile'
   'gitconfig'
   'gitignore_global'
 
