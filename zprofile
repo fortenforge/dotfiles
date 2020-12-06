@@ -8,7 +8,7 @@ export LSCOLORS=ExBxhxDxCxhxhxhxhxGxGx
 export PROMPT='%F{green}[%1~]> %f'
 
 # useful aliases
-alias search='set -f;search';search() { find . ${2:+-name "$2"} -type f -print0 | xargs -0 grep --color=auto "$1"; }
+search() { find . ${2:+-name "$2"} -type f -print0 | xargs -0 grep --color=auto "$1"; }
 alias finder="open ."
 trash() { mv "$1" ~/.Trash/; }
 alias objdump="objdump -x86-asm-syntax intel"
